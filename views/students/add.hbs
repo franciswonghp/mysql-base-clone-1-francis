@@ -1,0 +1,24 @@
+{{#extends "base"}}
+{{#block "content"}}
+<h1>Add a New student</h1>
+<form method="POST">
+    <div class="mb-3">
+        <label>First Name</label>
+        <input type="text" class="form-control" name="first_name">
+    </div>
+    <div class="mb-3">
+        <label>Last Name</label>
+        <input type="text" class="form-control" name="last_name">
+    </div>
+    <div class="mb-3">
+        <label>age</label>
+        <input type="text" class="form-control" name="age">
+    </div>
+    <div class="mb-3">
+        <label>class</label>
+        <input type="text" class="form-control" name="Class_id">
+    </div>
+    <button type="submit" class="btn btn-primary">Add student</button>
+</form>
+{{/block}}
+{{/extends}}

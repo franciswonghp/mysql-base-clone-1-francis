@@ -1,0 +1,23 @@
+{{#extends "base"}}
+{{#block "content"}}
+<h1>Student</h1>
+<table class="table">
+    <tr>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>age</th>
+        <th>classes</th>
+        <th></th>
+    </tr>
+    {{#each students}}
+    <tr>
+        <td>{{first_name}}</td>
+        <td>{{last_name}}</td>
+        <td>{{age}}</td>
+        <td>{{class_id}}</td>
+        <td><a href="/students/{{student_id}}/edit">Edit</a></td>
+    </tr>
+    {{/each}}
+</table>
+{{/block}}
+{{/extends}}

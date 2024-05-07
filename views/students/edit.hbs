@@ -1,0 +1,24 @@
+{{#extends "base"}}
+{{#block "content"}}
+<h1>Edit student</h1>
+<form method="POST">
+    <div class="mb-3">
+        <label>First Name</label>
+        <input type="text" class="form-control" name="first_name" value="{{student.first_name}}">
+    </div>
+    <div class="mb-3">
+        <label>Last Name</label>
+        <input type="text" class="form-control" name="last_name" value="{{students.last_name}}">
+    </div>
+    <div class="mb-3">
+        <label>age</label>
+        <input type="text" class="form-control" name="age" value="{{students.age}}">
+    </div>
+    <div class="mb-3">
+        <label>classes</label>
+       <input type="text" class="form-control" name="Class_id">
+    </div>
+    <button type="submit" class="btn btn-primary">Update Customer</button>
+</form>
+{{/block}}
+{{/extends}}
