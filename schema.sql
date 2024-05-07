@@ -1,9 +1,9 @@
--- Create your database if it doesn't exist
+-- database 
 CREATE DATABASE IF NOT EXISTS school_management;
 
 USE school_management;
 
--- Creating Tables for School Management System
+-- Tables for School Management System
 CREATE TABLE IF NOT EXISTS Students (
     student_id INT AUTO_INCREMENT PRIMARY KEY,
     first_name VARCHAR(255) NOT NULL,
@@ -36,4 +36,4 @@ CREATE TABLE IF NOT EXISTS Subjects (
     FOREIGN KEY (class_id) REFERENCES Classes(class_id)
 );
 
--- Define other tables as needed
+
